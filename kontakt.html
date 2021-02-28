@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <meta name="Author" content="Mateusz Wołyńczuk">
+  <meta name="robots" content="all" />
+  <meta name="description" content="Projekt na zalicznie przedmiotu - Projektowanie stron WWW">
+  <meta name="keywords" content="projekt, style, mobile, css, html5, rwd, css, bootstrap, jQuery, JS, portfolio, informacje, ciekawostki, motoryzacja">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>57-513 Crew - wspólna pasja motoryzacyjna</title>
+	    <link rel="stylesheet" href="stylesheets/style.css">
+		<link href="bootstrap/kontakt.css" rel="stylesheet" >
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+</head>
+<body>
+
+<header>
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style="background:rgba(1,1,1,0.5);">
+	<div class="container">
+	<a class="navbar-brand" href="#">
+    	<img src="images/logo.png" height="80"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	<div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto" >
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Strona główna <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="o_nas.html">O Nas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>         
+        <li class="nav-item active">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+    </ul>
+    </div>
+	</div>
+  </nav>
+</header>
+
+<main>
+<section class="page-section" id="contact" >
+            <div class="container"><br>
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Skontaktuj się z nami</h2>
+                    <h3 class="section-subheading text-muted">Jesteś zainteresowany współpracą, chciałbyś stworzyć z nami coś wyjątkowego? Nie czekaj, <b>napisz do nas już dziś!</b></h3>
+                </div>
+                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" id="name" type="text" placeholder="Tu wpisz imię *" required="required" data-validation-required-message="Proszę wpisać swoje imię." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="email" type="email" placeholder="Twój adres email *" required="required" data-validation-required-message="Proszę wpisać adres email." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <input class="form-control" id="phone" type="tel" placeholder="Twój numer telefonu *" required="required" data-validation-required-message="Proszę wpisać numer telefonu." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <textarea class="form-control" id="message" placeholder="Treść wiadomości *" required="required" data-validation-required-message="Pole 'Treść wiadomości' nie może pozostać puste."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div id="success"></div>
+                        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Wyślij wiadomość</button>
+                    </div>
+                </form>
+            </div>
+    </section>
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d40816.88013232511!2d16.6621443!3d50.2535569!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e046c7c58e093%3A0x3ac921d87830427f!2zV2lsa2Fuw7N3!5e0!3m2!1spl!2spl!4v1614450521458!5m2!1spl!2spl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+ 
+ </main>
+
+<footer class="p-3 mb-2 bg-black text-white">
+	<p class="footer1">Projekt strony na zalicznienie przedmiotu "Projektowanie stron WWW"</p>
+	<p>Autor strony: <a href="mailto:dsw40375@student.dsw.edu.pl">Mateusz Wołyńczuk</a></p>
+</footer>
+
+<script src="poczta/kontakt_form.js"></script>
+
+</body>
+</html>

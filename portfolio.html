@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <meta name="Author" content="Mateusz Wołyńczuk">
+  <meta name="robots" content="all" />
+  <meta name="description" content="Projekt na zalicznie przedmiotu - Projektowanie stron WWW">
+  <meta name="keywords" content="projekt, style, mobile, css, html5, rwd, css, bootstrap, jQuery, JS, portfolio, informacje, ciekawostki, motoryzacja">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>57-513 Crew - wspólna pasja motoryzacyjna</title>
+		<link rel="stylesheet" href="stylesheets/style.css">
+		<link href="bootstrap/styles.css" rel="stylesheet" >
+		<link href="bootstrap/portfolio.css" rel="stylesheet" >
+		<link href="bootstrap/portfolio2.css" rel="stylesheet" >
+		<link href="bootstrap/portfolio3.css" rel="stylesheet" >
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+		<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style="background:rgba(1,1,1,0.5);">
+    <div class="container">
+	<a class="navbar-brand" href="index.html">
+    	<img src="images/logo.png" height="80"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Strona główna<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="o_nas.html">O Nas</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>         
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+    </ul>
+    </div>
+	</div>
+  </nav>
+</header>
+
+<main>
+<section class="content-section">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfolio</h3>
+        <h2 class="mb-5"><b>NASZE PROJEKTY</b></h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="cyber2077/index.html" target="_blank">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Informatyka</div>
+                <p class="mb-0">Projekt strony internetowej poświęconej grze "Cyberpunk 2077" w ramach ćwiczeń na zajęciach.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/portfolio-1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" data-toggle="modal" href="#portfolioModal2">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Kinematografia</div>
+                <p class="mb-0">Nasz wspólny projekt. Połączenie moich umiejętności informatyczno-aktorskich z Patryka umiejętnościami reżyserskimi :) </p>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/portfolio-2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" data-toggle="modal" href="#portfolioModal3">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Fotografia</div>
+                <p class="mb-0">Nasze projekty fotograficzne, tutaj pokaz umiejętności dał nasz fotograf Konrad w sesjach fotograficznych z moim udziałem :P</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/portfolio-3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" data-toggle="modal" href="#portfolioModal4">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Motoryzacja / Mechanika</div>
+                <p class="mb-0">Tutaj zbiór moich projektów jako mechanika samochodowego oraz wspólne projekty zdjęciowe związane z branżą motoryzacyją.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/portfolio-4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+</main>
+
+<footer class="p-3 mb-2 bg-black text-white">
+	<p class="footer1">Projekt strony na zalicznienie przedmiotu "Projektowanie stron WWW"</p>
+	<p>Autor strony: <a href="mailto:dsw40375@student.dsw.edu.pl">Mateusz Wołyńczuk</a></p>
+</footer>
+
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Prezentacja samochodu</h2>
+                                    <p class="item-intro text-muted">Film prezentujący mój ówczesny samochód jakim był <b>Lexus IS200</b></p>
+                                     <video width="700" height="467" controls >
+									 <source src="video/lexus.mp4" type="video/mp4">
+									 </video>
+                                    <p>Nie jest to może film na miarę jakości tych Hollywood, aczkolwiek był to nasz pierwszy tego typu projekt tzw. pierwowzór, stąd też decyzja, aby umieścić go tu jako takie miłe sentymentalne wspomnienie i oczywście prezentacja namiastki naszych umiejętności w tej dziedzinie :)</p>
+                                    <ul class="list-inline">
+                                        <li>Data powstania filmu: lipiec 2018</li>
+										<li>Autor: Patryk Pelczarski</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Zamknij podgląd
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label"><b>Strefa Kondzia</b></h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="w3-content w3-container w3-padding-64">
+									<p class="w3-center"><em>Poniżej kilka wybranych zdjęć z różnych moich sesiji forograficznych z Kondradem.<br> Klikając na dane zdjęcie, można je powięksyć.</em></p><br>
+									<div class="w3-row-padding w3-center">
+									<div class="w3-col m3">
+									<img src="images/kondzio1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sesja na tle starego opuszczonego budynku w lesie.">
+									</div>
+									<div class="w3-col m3">
+									<img src="images/kondzio2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Szybka sesja podczas podróży, gdy z Konradem zobaczyliśmy snopy siana ułożone na polu.">
+									</div>
+									<div class="w3-col m3">
+									<img src="images/kondzio8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nocna sesja -było jakoś po 24- na myjni zaraz po zakupie przeze mnie nowego auta.">
+									</div>
+									<div class="w3-col m3">
+									<img src="images/kondzio5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Szybka sesja, gdy podczas spaceru naszym oczom ukazała się piękna choinka w miejskim parku.">
+									</div>
+									</div>
+									<div class="w3-row-padding w3-center w3-section">
+									<div class="w3-col m3">
+									<img src="images/kondzio4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tu Konrad uchwycił w obiektywie słynnego światowego filozofa i myśliciela Pana Mateusza. :P">
+									</div>
+									<div class="w3-col m3">
+									<img src="images/kondzio6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Zdjęcie opływające sexapilem - tak tak, tylko Konrad tak umiejętnie potrafi uchwycić idalny moment swoim bystrym okiem. ;)">
+									</div>
+									<div class="w3-col m3">
+									<img src="images/kondzio7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Niby zwykły murek, a jakie arcydzieło. Tak zgadliście to znou załuga naszego Kondzia.">
+									</div>
+									<div class="w3-col m3">
+									<img src="images/kondzio3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ja zachwycający się pięknem gór, wdychający do płuc to cudowne górskie powietrze.">
+									</div>
+									</div>
+									</div>
+									<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+									<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-times"></i></span>
+									<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+									<img id="img01" class="w3-image">
+									<p id="caption" class="w3-opacity w3-large"></p>
+									</div>
+									</div>
+                                    <p class="mb-5">Ten projekt jest zasługą naszego wspaniałego fotografa Konrada. Tylko on potrafi łapać tak wspaniałe kadry w obiektywie. Swoją drogą podejrzana sprawa gdzie tak dobrze nauczył się tej sztuki, bo coś mi się nie wydaje, że stało się to na stacji podczas, gdy obsługiwał kolejnego z rzędu klienta trzymając pistolet do tankowaia. :P<br> Ale o to już będziesz musiał/a zapytać go osobiście, być może po tym jak również zapragniesz skorzytać z jego usług i zaperezwujesz termin na sesję zdjęciową. :)<br>Serdecznie polecam!</p>
+                                    <ul class="list-inline">
+                                        <li>Data realizacji na przestrzeni lat: 2018 - 2020</li>
+										<li>Autor: Konrad Koch</li>
+                                    </ul>
+									<button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Zamknij podgląd
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		 <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Projekty związane z branżą motoryzacyjną</h2><br>
+                                    <div class="w3-content w3-container w3-padding-64">
+									<p class="item-intro text-muted"><b>Projekt hamulców Lexus IS220</b></p>
+									<p class="item-intro text-muted">Regeneracja i malowanie zacisków na piękny złoty metalik oraz dodanie loga "Lexus" na zaciskach</p>
+                                    <div class="w3-row-padding w3-center">
+									<div class="w3-col m3">
+									<img src="images/hamulec1.jpg" style="width:100%" onclick="image(this)" class="w3-hover-opacity">
+									</div>
+									<div class="w3-col m3">
+									<img src="images/hamulec2.jpg" style="width:100%" onclick="image(this)" class="w3-hover-opacity" >
+									</div>
+									<div class="w3-col m3">
+									<img src="images/hamulec3.jpg" style="width:100%" onclick="image(this)" class="w3-hover-opacity" >
+									</div>
+									<div class="w3-col m3">
+									<img src="images/hamulec4.jpg" style="width:100%" onclick="image(this)" class="w3-hover-opacity" >
+									</div>
+									</div>
+									
+									<p class="item-intro text-muted"><b>Projekt hamulców Fiat Bravo</b></p>
+									<p class="item-intro text-muted">Regeneracja i malowanie zacisków. Tym razem padło na Fiata Bravo. Jest to projekt unikatowy ponieważ zaciski są pomalowane w dwóch kolorach. Taka moja nietuzinkowa artystycna wizja :P</p>
+                                    <div class="w3-row-padding w3-center">
+									<div class="w3-col m3">
+									<img src="images/bravo1.jpg" style="width:100%" onclick="image(this)" class="w3-hover-opacity" >
+									</div>
+									<div class="w3-col m3">
+									<img src="images/bravo2.jpg" style="width:100%" onclick="image(this)" class="w3-hover-opacity" >
+									</div>
+									<div class="w3-col m3">
+									<img src="images/bravo3.jpg" style="width:100%" onclick="image(this)" class="w3-hover-opacity" >
+									</div>
+									<div class="w3-col m3">
+									<img src="images/bravo4.jpg" style="width:100%" onclick="image(this)" class="w3-hover-opacity" >
+									</div>
+									</div>
+									
+									<p class="item-intro text-muted"><b>Projekty zdjęciowe naszych samochodów</b></p>
+									<p class="item-intro text-muted">Zdjęcia naszych samochodów, których byliśmy posiadaczami w naszej motoryzacyjnej karierze. Wybrałem kilka wydaje mi się ciekawych fotek, ale jak to mówią o gustach się nie dyskutuje :) </p>
+									<div class="w3-row-padding w3-center">
+									<div class="w3-col m3">
+									<img src="images/fura1.jpg" style="width:100%" onclick="image(this)" class="w3-hover-opacity" >
+									</div>
+									<div class="w3-col m3">
+									<img src="images/fura2.jpg" style="width:100%" onclick="image(this)" class="w3-hover-opacity" >
+									</div>
+									<div class="w3-col m3">
+									<img src="images/fura3.jpg" style="width:100%" onclick="image(this)" class="w3-hover-opacity" >
+									</div>
+									<div class="w3-col m3">
+									<img src="images/fura4.jpg" style="width:100%" onclick="image(this)" class="w3-hover-opacity" >
+									</div>
+									</div>
+									
+									<p class="item-intro text-muted"><b>Ostatnia sekcja "PROJEKTY FILMOWE" naszych samochodów</b></p>
+									<p class="item-intro text-muted">Tak na koniec na poprawę humoru, kilka naszych projektów zza kulis :P</p>
+									<div class="w3-row-padding w3-center">
+									<div class="w3-col m4">
+									<video playsinline autoplay muted loop  src="video/video1.mp4" type="video/mp4" style="width:100%" onclick="video(this)" class="w3-hover-opacity">
+									</div>
+									<div class="w3-col m4">
+									<video playsinline autoplay muted loop  src="video/video2.mp4" type="video/mp4" style="width:100%" onclick="video(this)" class="w3-hover-opacity">
+									</div>
+									<div class="w3-col m4">
+									<video playsinline autoplay muted loop src="video/video3.mp4" type="video/mp4" style="width:100%" onclick="video(this)" class="w3-hover-opacity">
+									</div>
+									</div>
+									<p class="item-intro text-muted w3-col m4" > Jak nie my to kto? <br> Przywracanie trupa z zaświatów. </p>
+									<p class="item-intro text-muted w3-col m4" > Jak bujanka pod rejonie - to tylko na dwie Mazdy RX-8 :P </p>
+									<p class="item-intro text-muted w3-col m4" > Dziadek wreszcie dał klucz do garażu, a tam...TO coś !!! </p>
+									</div>
+									<div id="modal02" class="w3-modal w3-black" onclick="this.style.display='none'">
+									<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-times"></i></span>
+									<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+									<img id="img02" class="w3-image">
+									</div>
+									</div>
+									<div id="modal03" class="w3-modal w3-black" onclick="this.style.display='none'">
+									<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal"><i class="fa fa-times"></i></span>
+									<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+									<video id="vid01" width="700" height="467" autoplay controls >
+									</div>
+									</div>
+									<p>To tylko kilka naszych projektów z branży motoryzacyjnej.<br> Cały czas prężnie działamy i zapraszamy do współpracy :)</p>
+                                    <ul class="list-inline">
+                                        <li>Realizacja ww. projektów na przestrzeni lat: 2018 - 2020</li>
+									</ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Zamknij podgląd
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+<script>
+function image(element) {
+  document.getElementById("img02").src = element.src;
+  document.getElementById("modal02").style.display = "block";
+}
+function video(element) {
+  document.getElementById("vid01").src = element.src;
+  document.getElementById("modal03").style.display = "block";
+}
+</script>
+
+
+
+</body>
+</html>
